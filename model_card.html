@@ -1,0 +1,86 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+  <center><h1>Model Card - IDOOU AI Budget Predicter</h1></center>
+  <h2>Model Details</h2>
+  
+<br>-- Budget Predicter AI is a model that predicts user budget categoty based on input variables.
+<br>-- Utilizes supervised machine learning based on Logisitc Regression Classifier. 
+<br>-- Developed by Kareem Wahid and Udacity Team. 
+
+  <h2>Intended Use</h2>
+  
+<br>-- Ultimatley intended as adjunt to provide personalized activity recommendations to users based on their profile.
+<br>-- Target population is Mobile app users who want to discover new activities in their area.
+<br>-- The model will be integrated into the IDOOU mobile app to generate real-time recommendations. 
+<br>-- User feedback for accurate predictions will be prompted.
+
+  <h2>Factors</h2>
+  
+<br>-- Budget
+<br>-- Age
+<br>-- Education Level
+<br>-- Gender
+
+  <h2>Metrics</h2>
+  
+<br>-- Evaluation metrics include accuracy, and metrics based on 4 cardinalities (e.g., sensitivity, specificity, false positive rate, false negative rate) 
+<br>-- Fairness metrics include statistical parity difference, disparate impact, and Theil index.
+
+  <h2> Training Data </h2>
+  
+<br>-- 50% of full dataset split randomly shuffeled
+
+  <h2> Evaluation Data </h2>
+  
+<br>-- 30% validation, 20% testing 
+
+  <h2>Quantitative Analysis</h2>
+  
+<br>--
+<br>--Before...
+Best balanced accuracy: 0.9917
+Corresponding statistical parity difference value: -0.5927
+
+<br>--After...
+Best balanced accuracy: 0.9903
+Corresponding statistical parity difference value: 0.0234
+
+  
+  <br/><br/><b>Results of the AI model after applying the bias mitigation strategy</b><br/>
+  
+  <center>
+  
+  <img src="1.png"><br/>
+  <img src="2.png"><br/>
+  <img src="3.png"><br/>
+
+  </center>
+
+  <h2>Ethical Considerations</h2>
+  
+<br>-- Users can control aspects of model and inspect features through feature permutation.
+<br>-- Data only  representative of specific population, may not be applicable to end user population.
+<br>-- Very slight bias against individuals higher than HS degree.
+
+  <h2>Caveats and Recommendations</h2>
+  
+<br>-- The model may not be able to account for all factors that contribute to a user's budget, such as their location or income.
+<br>-- Reccomended to use a diverse dataset that reflects the app's user base. Use techniques such as data augmentation to increase the diversity of the data. Regularly monitor and evaluate the model's performance to ensure that it remains unbiased.
+<br>-- User opt out option.
+<br>-- Further ethical AI analyses I would apply beyond this project:
+<br>-- Additional informative demographic features that can be integrated into model to mitigate bias.
+
+  <h2>Business Consequences</h2>
+  
+
+<br>-- Positive Impact:
+<br>-- A fair and accurate budget predictor can help IDOOU's users make informed decisions about the activities they can afford to participate in. This can increase user engagement and satisfaction with the app, leading to increased usage and revenue.
+
+<br>-- Negative Impact:
+<br>-- If the model is biased or inaccurate, it can lead to negative user experiences and potentially damage the app's reputation. Additionally, biased predictions can perpetuate social inequalities and harm certain groups of users. This can lead to legal and ethical consequences for the company.
+
+  </body>
+</html>
